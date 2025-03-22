@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Video from "next-video";
 import styles from "./page.module.css";
-import sample from "/videos/sample.mp4";
+import video from "/videos/video.mp4";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -13,12 +13,12 @@ export default function Home() {
 
   useEffect(() => {
     // Check if the user has paid (this is a placeholder, implement your own logic)
-    const paymentStatus = localStorage.getItem("hasPaid");
-    if (paymentStatus === "true") {
+    //const paymentStatus = localStorage.getItem("hasPaid");
+    //if (paymentStatus === "true") {
       setHasPaid(true);
-    } else {
-     router.push("/payment");
-    }
+    //} else {
+     //router.push("/payment");
+    //}
       
   }, [router]);
 
@@ -50,7 +50,7 @@ export default function Home() {
             height={500}
             priority
           />
-          <Video className={styles.video} src={sample} />
+          <Video className={styles.video} src={video} />
           <Image
             className={styles.sideImage}
             src="/level.jpg"
