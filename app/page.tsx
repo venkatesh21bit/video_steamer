@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className={styles.heading}>Solo Leveling Episode 12</h1>
+        <h1 className={styles.heading}>Solo Leveling Episode 12 Preview</h1>
         <div className={styles.topImage}>
           <Image
             src="/jinwoo.jpg"
@@ -50,6 +50,7 @@ export default function Home() {
             height={500}
             priority
           />
+          
           <Video className={styles.video} src={video} />
           <Image
             className={styles.sideImage}
