@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Video from "next-video";
 import styles from "./page.module.css";
-import video from "/videos/video.mp4";
+import video from "/videos/video.mkv";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1 className={styles.heading}>Solo Leveling Episode 12 Preview</h1>
+        <h1 className={styles.heading}>Solo Leveling Episode 12</h1>
         <div className={styles.topImage}>
           <Image
             src="/jinwoo.jpg"
